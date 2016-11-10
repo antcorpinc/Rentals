@@ -1,0 +1,27 @@
+﻿@model Rentals.ViewModels.ReserveCarViewModel
+
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <h3>Reserve</h3>
+        <form method="post" novalidate>
+
+           
+            <div class="form-group">
+                <label asp-for="PickUpDate"></label>
+                <input asp-for="PickUpDate" class="form-control" />
+                <span asp-validation-for="PickUpDate"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="ReturnDate"></label>
+                <input asp-for="ReturnDate" class="form-control" />
+                <span asp-validation-for="ReturnDate"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Available Cars" class="btn btn-success" />
+            </div>
+        </form>
+    </div>
+
+</div>
